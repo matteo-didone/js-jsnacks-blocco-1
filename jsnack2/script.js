@@ -61,7 +61,7 @@ guestListContainer.appendChild(guestName);
 guestListContainer.appendChild(guestListPresence);
 
 //Display the guest's name in the document
-guestName.innerHTML = "Guest Name: " + guestName;
+guestName.innerHTML = "Guest Name: " + guestName.value;
 
 
 // Check if the guest name is on the guest list
