@@ -1,6 +1,6 @@
 //I need to ask the guest for their name, check if their name is on the guest list, and print a message appropriate on the result of the check
 const guestName = prompt("Please provide your name: ");
-console.log(guestName);
+console.log("Guest Name: " + guestName);
 var guestFound = false;
 
 //Create an array of email addresses
