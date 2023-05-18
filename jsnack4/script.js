@@ -1,6 +1,14 @@
 //Ask the user for a four-digit number 
 let fourDigitNumber = prompt("Please provide a four-digit number: ");
 
+
+
+// Keep prompting until a valid four-digit number is provided
+while (fourDigitNumber.length !== 4 || isNaN(fourDigitNumber))
+{
+    fourDigitNumber = prompt("Please provide a valid four-digit number: ");
+}
+
 // Create the <p> elements for number paragraph 
 let fourDigitNumberParagraph = document.createElement('p');
 fourDigitNumberParagraph.id = 'four-digit-paragraph';
@@ -10,12 +18,6 @@ const fourDigitSumContainer = document.querySelector('.four-digit-sum-container'
 
 // Append the <p> elements to the container
 fourDigitSumContainer.appendChild(fourDigitNumberParagraph);
-
-//Check if the number is a four-digit number
-if (fourDigitNumber.length !== 4) 
-{
-    alert("The number you provided is not a four-digit number.");
-}
 
 //If the number is a four-digit number, add each digit to an array
 //Create an empty array
