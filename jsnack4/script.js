@@ -1,8 +1,6 @@
 //Ask the user for a four-digit number 
 let fourDigitNumber = prompt("Please provide a four-digit number: ");
 
-
-
 // Keep prompting until a valid four-digit number is provided
 while (fourDigitNumber.length !== 4 || isNaN(fourDigitNumber))
 {

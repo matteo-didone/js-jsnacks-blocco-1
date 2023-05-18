@@ -15,9 +15,9 @@ addingNumberToArrayContainer.appendChild(numberParagraph);
 for (let i = 0; i < 6; i++) 
 {
     let numberProvided = prompt("Please provide a number: ");
-    if (numberProvided % 3 === 0) 
+    if (numberProvided % 2 !== 0) 
     {
-        numbers.push(numberProvided);
+        numbers.push(parseInt(numberProvided));
     }
 }
 
