@@ -1,5 +1,5 @@
 //I need to ask the guest for their name, check if their name is on the guest list, and print a message appropriate on the result of the check
-const guest = prompt("Please provide your name: ");
+const guestName = prompt("Please provide your name: ");
 var guestFound = false;
 
 //Create an array of email addresses
@@ -48,7 +48,7 @@ const guestList =
 ];
 
 // Create the <p> elements for name provided and guest list presence
-const guestName = document.createElement('p');
+const guestNameParagragh = document.createElement('p');
 guestName.id = 'guest-name';
 const guestListPresence = document.createElement('p');
 guestListPresence.id = 'guest-list-presence';
@@ -57,11 +57,11 @@ guestListPresence.id = 'guest-list-presence';
 const guestListContainer = document.querySelector('.guest-list-container');
 
 // Append the <p> elements to the container
-guestListContainer.appendChild(guestName);
+guestListContainer.appendChild(guestNameParagragh);
 guestListContainer.appendChild(guestListPresence);
 
 //Display the guest's name in the document
-guestName.innerHTML = "Guest Name: " + guestName.value;
+guestNameParagragh.innerHTML = "Guest Name: " + guestName;
 
 
 // Check if the guest name is on the guest list
